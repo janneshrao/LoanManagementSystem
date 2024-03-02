@@ -21,18 +21,19 @@ public class LoanManagement {
             System.out.print("Enter your choice : ");
             int choice = Integer.parseInt(sc.nextLine());
 
-            System.out.print("Enter user id : ");
-            id = Integer.parseInt(sc.nextLine());
-
             switch (choice) {
                 case 1:
 
+                    System.out.print("Enter user id : ");
+                    id = Integer.parseInt(sc.nextLine());
                     System.out.print("Enter user name : ");
                     String name = sc.nextLine();
                     addUser(id, name);
-
+                    System.out.println("User added successfully..!!");
                     break;
+
                 default:
+                    System.out.println("Please enter valid option..!!");
                     break;
             }
 
