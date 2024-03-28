@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="addLoan" method="post">
+		<h2><b>Add your Loans Here...!!!</b></h2>
+		<label for="creditor">Creditor Name : </label>
+		<input type="text" id="creditor" name="creditor"><br><br>
+		<label for="loanAmount">Loan Amount : </label>
+		<input type="text" id="loanAmount" name="loanAmount"><br><br>
+		<p>Select Loan Type : </p>
+		<input type="radio" id="handLoan" name="loanType" value="handLoan">
+		<label for="handLoan">Hand Loan</label><br>
+		<input type="radio" id="bankLoan" name="loanType" value="bankLoan">
+		<label for="bankLoan">Bank Loan</label><br>
+		<input type="radio" id="creditCardLoan" name="loanType" value="creditCardLoan">
+		<label for="creditCardLoan">Credit Card Loan</label><br>
+		<input type="radio" id="appLoan" name="loanType" value="appLoan">
+		<label for="appLoan">Third Party Loans (E.g. Slice, etc)</label><br>
+		<p>Is there any interest applied on the loan?</p>
+		<input type="radio" id="yes" name="interestApplication" value="yes">
+		<label for="yes">Yes</label><br>
+		<input type="radio" id="no" name="interestApplication" value="no">
+		<label for="no">No</label><br><br>
+		<input type="submit" value="Submit">
+		
+	</form>
+</body>
+</html>
